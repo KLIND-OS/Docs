@@ -10,7 +10,8 @@
   "repository": "https://github.com/JZITNIK-github/KLIND-OS/KLIND-OS-Docs",
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build src"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build src",
+    "renderbuild": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
