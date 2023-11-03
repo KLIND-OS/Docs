@@ -1,0 +1,19 @@
+{
+  "name": "KLIND-OS-Docs",
+  "version": "0.0.1",
+  "description": "Dokumentace pro KLIND OS",
+  "main": "index.js",
+  "authors": {
+    "name": "Jakub Žitník",
+    "email": "email@jzitnik.is-a.dev"
+  },
+  "repository": "https://github.com/JZITNIK-github/KLIND-OS/KLIND-OS-Docs",
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.14.11"
+  }
+}
