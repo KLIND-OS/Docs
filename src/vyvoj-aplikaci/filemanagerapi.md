@@ -34,12 +34,20 @@ control.fileManager.properties(fileArray)
 control.fileManager.open(control.fileManager.getFile("/file.txt"))
 ```
 
-## Save
+## Save text
 
-Funkce `save` se používá k uložení dat do souboru. První parametr je lokace souboru a druhý je data souboru.
+Funkce `savetext` se používá k uložení dat do souboru. První parametr je lokace souboru a druhý je data souboru.
 
 ```javascript
-control.fileManager.save("/file.txt", "ahoj")
+control.fileManager.saveText("/file.txt", "ahoj")
+```
+
+## Save
+
+Funkce `save` se používá pokud chcete uložit do souboru něco jiného než text. Musíte vložit datauri.
+
+```javascript
+control.fileManager.saveText("/file.txt", "data:text/plain;base64,TmV2w61tIGNvIGNoY2k=")
 ```
 
 ## Set wallpaper
@@ -52,10 +60,18 @@ control.fileManager.setWallpaper("/wallpaper.jpg")
 
 ## Get content
 
-Funkce `getContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru.
+Funkce `getContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru. Vrací data uri souboru.
 
 ```javascript
-console.log(control.fileManager.getContent("/file.txt"))
+console.log(control.fileManager.getContent("/file.jpg"))
+```
+
+## Get text content
+
+Funkce `getTextContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru. Vrací text souboru.
+
+```javascript
+console.log(control.fileManager.getTextContent("/file.txt"))
 ```
 
 ## Folder Exist
@@ -90,6 +106,7 @@ console.log(control.fileManager.getFile("/file.txt"))
 ## Create File
 
 Funkce `create file` se používá pro vytváří souboru. Bere 4 parametry ve formátu objektu:
+
 1. `name`: Název souboru
 2. `type` (volitelné): Mime typ souboru. Výchozí text/plain
 3. `content` (volitelné): Obsah souboru. Výchozí ""
@@ -113,6 +130,7 @@ else {
 Funkce `addProgramToOpenApps` se používá pro přidání aplikace pro otevírání souboru.
 Třeba chcete vytvořit aplikaci která bude otevírat textové soubory. Pomocí této funkce to můžete udělat.
 Funkce bere 3 parametry:
+
 1. Typ/Tyypy souboru pro otevření buď jako string nebo array stringů
    Např. `text/plain` nebo `["text/plain", "text/html"]`
    a nebo můžete použít jenom první část mime typu. Např `text` nebo `["text", "image"]` to vezme všechny mime typy které mají na začátku text nebo image
