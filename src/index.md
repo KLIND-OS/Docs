@@ -11,5 +11,5 @@ features:
   details: Naučte se vytvářet aplikace pro KLIND OS promocí JavaScriptu
 - title: Staňte se vývojářem
   details: Staňte se vývojářem KLIND OS a pomozte ve vývoji KLIND OS
-footer: Made with hate, suffering and anxiety by Jakub Žitník in Czech Republic.
+footer: Made with hate and suffering by Jakub Žitník in the Czech Republic.
 ---
