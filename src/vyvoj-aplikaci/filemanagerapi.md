@@ -47,7 +47,7 @@ control.fileManager.saveText("/file.txt", "ahoj")
 Funkce `save` se používá pokud chcete uložit do souboru něco jiného než text. Musíte vložit datauri.
 
 ```javascript
-control.fileManager.saveText("/file.txt", "data:text/plain;base64,TmV2w61tIGNvIGNoY2k=")
+control.fileManager.save("/file.txt", "data:text/plain;base64,TmV2w61tIGNvIGNoY2k=")
 ```
 
 ## Set wallpaper
