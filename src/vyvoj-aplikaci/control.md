@@ -108,7 +108,7 @@ Tohle je FileManager API. Více info zde: [FileManager API](filemanagerapi.md)
 control.message.prompt("Zadejte jméno: ", (response) => {
     console.log(response)
 })
-control.message.prompt("Opravdu chcete smazat soubor?", (response) => {
+control.message.confirm("Opravdu chcete smazat soubor?", (response) => {
     if (response) {
         console.log("potvrzeno")
     }
