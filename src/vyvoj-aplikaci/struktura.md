@@ -4,59 +4,68 @@ KLIND OS má pravidla pro správné strukturování kódu. Nikdo vás nebude nut
 
 ## Třídy
 
-Každá aplikace je jedna třída
+Každá aplikace je jedna třída a používá se ClassConstructor na vytváření aplikací.
 
 ```javascript
 class PoznamkovyBlok {
-    static app = new App({
-        name: "Název aplikace",
-        hidden: false
-    })
-    static defaultWindow = this.app.createWindow({
-        name: "Název okna",
-        buttons: {
-            close: (win) => {
-                console.log("Aplikace byla zavřena")
+    constructor() {
+        this.app = new App({
+            name: "Název aplikace",
+            hidden: false
+        })
+        this.app.createWindow({
+            name: "Název okna",
+            buttons: {
+                close: (win) => {
+                    console.log("Aplikace byla zavřena")
+                },
+                mini: (win) => {
+                    console.log("Aplikace byla minimizována")
+                }
             },
-            mini: (win) => {
-                console.log("Aplikace byla minimizována")
+            content: `<h1>Ahoj</h1>`,
+            defaultWindow: true,
+            onStart: (win) => {
+                console.log("Aplikace byla spuštěna")
             }
-        },
-        content: `<h1>Ahoj</h1>`,
-        defaultWindow: true,
-        onStart: (win) => {
-            console.log("Aplikace byla spuštěna")
-        }
-    })
+        })
+    }
 }
+
+ClassConstructor.add(PoznamkovyBlok);
 ```
 
 ## Všechny funkce se dávají do této třídy
+Všechny funkce se dávají do této třídy. Pokud chcete spustit funkci, třídu najdete v objektu "ClList"
 
 ```javascript
 class PoznamkovyBlok {
-    static app = new App({
-        name: "Název aplikace",
-        hidden: false
-    })
-    static defaultWindow = this.app.createWindow({
-        name: "Název okna",
-        buttons: {
-            close: (win) => {
-                console.log("Aplikace byla zavřena")
+    constructor(key) {
+        this.app = new App({
+            name: "Název aplikace",
+            hidden: false
+        })
+        this.app.createWindow({
+            name: "Název okna",
+            buttons: {
+                close: (win) => {
+                    console.log("Aplikace byla zavřena")
+                },
+                mini: (win) => {
+                    console.log("Aplikace byla minimizována")
+                }
             },
-            mini: (win) => {
-                console.log("Aplikace byla minimizována")
+            content: `<h1>Ahoj</h1><button onclick="ClList['${key}'].ahoj()">Ahoj</button`,
+            defaultWindow: true,
+            onStart: (win) => {
+                console.log("Aplikace byla spuštěna")
             }
-        },
-        content: `<h1>Ahoj</h1><button onclick="PoznamkovyBlog.ahoj()">Ahoj</button`,
-        defaultWindow: true,
-        onStart: (win) => {
-            console.log("Aplikace byla spuštěna")
-        }
-    })
-    static ahoj() {
-        spawnNotification(PoznamkovyBlog.infor.name, "Ahoj")
+        })
+    }
+    ahoj() {
+        spawnNotification(this.info.name, "Ahoj")
     }
 }
+
+ClassConstructor.add(PoznamkovyBlok);
 ```
