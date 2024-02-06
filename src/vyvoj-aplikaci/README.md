@@ -12,6 +12,6 @@ Musíte mít základní znalost JavaScriptu a HTML.
 
 ## Jak začít?
 
-První si musíte [stáhnout KLIND OS](/navod/instalace.md). Poté si stáhněte `Developer tools` z [této stránky](https://klindos.jzitnik.is-a.dev/app-creator) a nainstalujte si je promocí instalátoru aplikací.
+První si musíte [stáhnout KLIND OS](/navod/instalace.md). Poté si stáhněte `Developer tools` z [této stránky](https://klindos.jzitnik.dev/app-creator) a nainstalujte si je promocí instalátoru aplikací.
 
 Měla by se vám nainstalovat nová aplikace Developer tools.

@@ -18,5 +18,5 @@ V KLIND OS je dost chyb a taky zde je špatná podpora internetu, tiskáren a da
 
 ## Na KLIND OS nepracuje tým lidí
 
-Na KLIND OS pracuji jenom [já](https://jzitnik.is-a.dev). Proto nejsem všechny chyby opravit a udělat to, co velké korporáty mají. Pokud někdo chce, příjmám pull requesty.
+Na KLIND OS pracuji jenom [já](https://jzitnik.dev). Proto nejsem všechny chyby opravit a udělat to, co velké korporáty mají. Pokud někdo chce, příjmám pull requesty.
 

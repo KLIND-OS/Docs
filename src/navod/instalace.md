@@ -6,7 +6,7 @@ Virtual Box je program který Vám umožní nainstalovat KLIND OS na Váš stáv
 
 ### Stažení instalačního souboru
 
-Jako první si musíte stáhnout instalační ISO soubor. Soubor si můžete stáhnout [zde](https://klindos.jzitnik.is-a.dev/download).
+Jako první si musíte stáhnout instalační ISO soubor. Soubor si můžete stáhnout [zde](https://klindos.jzitnik.dev/download).
 
 ### Stažení Virtual Boxu
 
@@ -71,7 +71,7 @@ Instalace na počítač je dost riziková. Ujistěte se že na počítači nemá
 
 ### Stažení instalačního souboru
 
-Jako první si musíte stáhnout instalační ISO soubor. Soubor si můžete stáhnout [zde](https://klindos.jzitnik.is-a.dev/download).
+Jako první si musíte stáhnout instalační ISO soubor. Soubor si můžete stáhnout [zde](https://klindos.jzitnik.dev/download).
 
 ### Stažení programu Rufus / Balena etcher
 
