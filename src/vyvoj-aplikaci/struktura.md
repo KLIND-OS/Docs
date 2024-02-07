@@ -63,7 +63,7 @@ class PoznamkovyBlok {
         })
     }
     ahoj() {
-        spawnNotification(this.info.name, "Ahoj")
+        control.notify(this.app.info.name, "Ahoj")
     }
 }
 
