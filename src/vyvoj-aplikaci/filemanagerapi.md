@@ -92,7 +92,7 @@ else {
 Funkce `allFiles` vrátí všechny soubory ve složce. Bere jeden parametr a to je cesta ke složce.
 
 ```javascript
-control.fileManager.getFile("/folder")
+control.fileManager.allFiles("/folder")
 ```
 
 ## Get File
