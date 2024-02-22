@@ -15,9 +15,9 @@ console.log(control.fileManager.openWith)
 `open` se používá na otevření souboru. Funkce `open` bere 1 parametr a to je `FileArray`. [Jak získat FileArray](#get-file)
 
 ```javascript
-control.fileManager.open(fileArray)
+await control.fileManager.open(folder, file)
 // Např.
-control.fileManager.open(control.fileManager.getFile("/file.txt"))
+await contol.fileManager.open("/Downloads/", "file.txt")
 ```
 
 ## openFileWithApp
@@ -29,9 +29,9 @@ Tato funkce není pro API a používá se v jiných funkcích.
 `properties` je funkce která otevře okno vlastnosti souboru. Tato funkce bere `FileArray`
 
 ```javascript
-control.fileManager.properties(fileArray)
+await control.fileManager.properties(cesta)
 // Např.
-control.fileManager.open(control.fileManager.getFile("/file.txt"))
+await control.fileManager.open("/Downloads/file.txt")
 ```
 
 ## Save text
@@ -44,10 +44,11 @@ control.fileManager.saveText("/file.txt", "ahoj")
 
 ## Save
 
-Funkce `save` se používá pokud chcete uložit do souboru něco jiného než text. Musíte vložit datauri.
+Funkce `save` se používá pokud chcete uložit do souboru něco jiného než text. Musíte vložit binary.
 
 ```javascript
-control.fileManager.save("/file.txt", "data:text/plain;base64,TmV2w61tIGNvIGNoY2k=")
+const binaryData = Buffer.from("Hello, World!", 'utf-8');
+control.fileManager.save("/file.txt", binaryData)
 ```
 
 ## Set wallpaper
@@ -60,10 +61,10 @@ control.fileManager.setWallpaper("/wallpaper.jpg")
 
 ## Get content
 
-Funkce `getContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru. Vrací data uri souboru.
+Funkce `getContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru. Vrací binary souboru.
 
 ```javascript
-console.log(control.fileManager.getContent("/file.jpg"))
+console.log(await control.fileManager.getContent("/file.jpg"))
 ```
 
 ## Get text content
@@ -71,7 +72,7 @@ console.log(control.fileManager.getContent("/file.jpg"))
 Funkce `getTextContent` se používá když chcete získat obsah souboru. Bere jeden parametr a to je cesta k souboru. Vrací text souboru.
 
 ```javascript
-console.log(control.fileManager.getTextContent("/file.txt"))
+console.log(await control.fileManager.getTextContent("/file.txt"))
 ```
 
 ## Folder Exist
@@ -79,7 +80,7 @@ console.log(control.fileManager.getTextContent("/file.txt"))
 Funkce `folderExist` zjistí jestli složka existuje. Bere jeden parametr a to je cesta ke složce.
 
 ```javascript
-if (control.fileManager.folderExist("/folder")) {
+if (await control.fileManager.folderExist("/folder")) {
     console.log("existuje")
 }
 else {
@@ -92,24 +93,15 @@ else {
 Funkce `allFiles` vrátí všechny soubory ve složce. Bere jeden parametr a to je cesta ke složce.
 
 ```javascript
-control.fileManager.allFiles("/folder")
+await control.fileManager.allFiles("/folder")
 ```
 
-## Get File
-
-Funkce `getFile` vrací `FileArray` podle cesty. Bere jeden parametr a to je cesta k souboru.
-
-```javascript
-console.log(control.fileManager.getFile("/file.txt"))
-```
 
 ## Create File
 
-Funkce `create file` se používá pro vytváří souboru. Bere 4 parametry ve formátu objektu:
+Async funkce `create file` se používá pro vytváří souboru. Bere 4 parametry ve formátu objektu:
 
 1. `name`: Název souboru
-2. `type` (volitelné): Mime typ souboru. Výchozí text/plain
-3. `content` (volitelné): Obsah souboru. Výchozí ""
 4. `parentFolder` (volitelné): Složke ve které bude soubor uložen. Výchozí "/"
 
 ## File Exists
@@ -117,7 +109,7 @@ Funkce `create file` se používá pro vytváří souboru. Bere 4 parametry ve f
 Funkce `fileExists` vrací `true` nebo `false` jestli soubor existuje podle cesty.
 
 ```javascript
-if (control.fileManager.fileExists("/file.txt")) {
+if (await control.fileManager.fileExists("/file.txt")) {
     console.log("Soubor existuje!")
 }
 else {
@@ -141,52 +133,4 @@ Funkce bere 3 parametry:
 control.fileManager.addProgramToOpenApps(["text", "image"], (fileArray) => {
     console.log(fileArray)
 }, "Nejlepší program")
-```
-
-## saveFromUri
-
-Funkce která se používá v jiných funkcích a nemusíte ji řešit.
-
-# Třída File
-
-Třída `File` je třída pro jednodužší práci s `FileArray`.
-
-## Konstruktor
-
-Konstruktor bere jeden parametr a to je `FileArray`
-
-```javascript
-var soubor = new File(control.fileManager.getFile("name"))
-```
-
-## Decode to array
-
-Funkce `decodeToArray` se používá pro zpětné převedení na `FileArray`
-
-```javascript
-console.log(soubor.decodeToArray())
-```
-
-## Open
-
-Funkce `open` otevře soubor
-
-```javascript
-soubor.open()
-```
-
-## Save
-
-Funkce `save` uloží data do souboru
-
-```javascript
-soubor.save("Ahoj, jak se máš?")
-```
-
-## Remove
-
-Funkce `remove` soubor odstraní.
-
-```javascript
-soubor.remove()
 ```
