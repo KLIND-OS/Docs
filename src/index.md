@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://raw.githubusercontent.com/JZITNIK-github/KLIND-OS-Server/main/logo.png
+heroImage: https://raw.githubusercontent.com/KLIND-OS/Server/main/logo.png
 tagline: Dokumentace pro KLIND OS
 actionText: Začínáme →
 actionLink: /navod/
