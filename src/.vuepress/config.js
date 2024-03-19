@@ -83,7 +83,6 @@ module.exports = {
             "storage",
             "control",
             "filemanagerapi",
-            "struktura",
           ],
         },
       ],

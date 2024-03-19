@@ -2,10 +2,12 @@
 
 Nyní si otestujeme aplikaci kterou jsme naprogramovali.
 
-## Developer tools
+## Kompilace
 
-Otevřte si aplikaci Developer tools. Zde do kolonky enter name zadejte jméno aplikace. To musí být stejné jako jsme si nastavovali v `new App()`.
+Spusťte `KLINS-OS-Packager.mjs` a vyberte možnost `Vykompilovat aplikaci a přesunout do KLIND OS Development`.
 
-Do druhé kolonky zadejte kód ze souboru `script.js`.
+Následně vyberte možnost `Nejnovější verze` a nechte dokončit kompilaci.
 
-Poté klikněte na Load a aplikace se Vám načte. Po restartu ale aplikace zmizí. Pokud budete chtít kód upravit tak nezapomeňte před tím než znovu stisknete load, systém restartovat.
+Nyní je aplikace vykompilována a přesunuta do KLIND OS Developers. Zajděte do Správce Souborů v KLIND OS a v root složce budete mít vykompilovanou aplikaci.
+
+Tu nainstalujte stejným způsobem jako ostatní aplikace.

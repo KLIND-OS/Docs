@@ -1,8 +1,13 @@
 # Kompilace aplikace
 
-Poté co máte aplikaci vytvořenou, musíte ji vykompilovat. To se dělá přes [kompilátor aplikací](https://klindos.jzitnik.dev/app-creator).
+Poté co máte aplikaci vytvořenou, musíte ji vykompilovat. 
 
-1. Najděte si ikonu kterou chcete použít pro vaši aplikaci.
-2. Zajděte na [klindos.jzitnik.dev/app-creator](https://klindos.jzitnik.dev/app-creator)
-3. Do kompilátoru nahrajte ikonu, script a instalační script (script který se spustí při instalaci)
-4. A nyní budete mít vykompilovanou aplikaci do .kapk souboru který můžete použít v instalátoru aplikací.
+Uložte si ikonu do `assets/logo.png` a následně spusťte KLIND-OS-Packager.mjs.
+
+Vyberte možnost `Vykompilovat aplikaci do produkce` a vyberte možnost `Nejnovější verze`.
+
+Poté se Vám aplikace vykompiluje.
+
+## Vykompilovaná aplikace
+
+Vaše vykompilovaná aplikace se bude nacházet ve složce `dist`
