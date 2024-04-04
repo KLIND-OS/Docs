@@ -123,14 +123,17 @@ Funkce `addProgramToOpenApps` se používá pro přidání aplikace pro otevír�
 Třeba chcete vytvořit aplikaci která bude otevírat textové soubory. Pomocí této funkce to můžete udělat.
 Funkce bere 3 parametry:
 
-1. Typ/Tyypy souboru pro otevření buď jako string nebo array stringů
-   Např. `text/plain` nebo `["text/plain", "text/html"]`
-   a nebo můžete použít jenom první část mime typu. Např `text` nebo `["text", "image"]` to vezme všechny mime typy které mají na začátku text nebo image
-2. Script který se má spustit při otevření souboru. Musí mít jeden parametr a to bude `FileArray`
+1. Typ/Typy souboru pro otevření buď jako string nebo array stringů
+   Např. `txt` nebo `["txt", "html"]`
+2. Script který se má spustit při otevření souboru. Musí mít jeden parametr a to bude `path`
 3. Název aplikace
 
 ```javascript
-control.fileManager.addProgramToOpenApps(["text", "image"], (fileArray) => {
+control.fileManager.addProgramToOpenApps(["text", "image"], (path) => {
     console.log(fileArray)
 }, "Nejlepší program")
 ```
+
+## FileLocker API
+
+Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží [FileLocker API](filelocker.md).

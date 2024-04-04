@@ -83,6 +83,7 @@ module.exports = {
             "storage",
             "control",
             "filemanagerapi",
+            "filelocker",
           ],
         },
       ],
