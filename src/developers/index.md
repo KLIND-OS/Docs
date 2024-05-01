@@ -4,7 +4,7 @@ Nainstalujte si KLIND OS na váš operační systém jako program. KLIND OS mů�
 
 # Pro koho je KLIND OS Developers
 
-KLIND OS Developers je pro programátory kteří chcou programovat KLIND OS. Nebo KLIND OS Developers může být pro lidi kteří si chcou jenom vyzkoušet KLIDN OS a nechcou ho instalovat na VirtualBox nebo počítač.
+KLIND OS Developers je pro programátory, kteří chtějí programovat KLIND OS. Nebo KLIND OS Developers může být pro lidi, kteří si chtějí jenom vyzkoušet KLIDN OS a nechtějí ho instalovat na VirtualBox nebo počítač.
 
 # Jak spustit
 
