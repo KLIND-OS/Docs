@@ -80,6 +80,7 @@ module.exports = {
             "prvni-aplikace",
             "otestovat-aplikaci",
             "kompilace",
+            "jsstyles",
             "storage",
             "control",
             "filemanagerapi",

@@ -14,7 +14,7 @@ const bypass = FileLocker.add(path);
 Funkce `add` vrací bypass klíč. Tento klíč slouží k autorizaci aplikace. Takže pokud následně budete s daným souborem pracovat musíte využít bypass key.
 
 ```javascript
-control.fileManager.saveText(path, "Hello world!", bypass);
+control.fileManager.save(path, "Hello world!", bypass, "utf8");
 ```
 
 ## Uchovat soubor zamknutý
