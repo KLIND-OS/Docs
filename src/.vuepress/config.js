@@ -63,6 +63,8 @@ module.exports = {
             "",
             "instalace",
             "zacatek",
+            "internet",
+            "bluetooth",
             "spravce-souboru",
             "prohlizec",
             "kalkulacka",
