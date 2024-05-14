@@ -84,6 +84,7 @@ module.exports = {
             "kompilace",
             "jsstyles",
             "storage",
+            "appdata",
             "control",
             "filemanagerapi",
             "filelocker",
