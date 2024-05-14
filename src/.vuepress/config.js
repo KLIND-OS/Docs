@@ -88,6 +88,7 @@ module.exports = {
             "control",
             "filemanagerapi",
             "filelocker",
+            "trackingstatus",
           ],
         },
       ],
