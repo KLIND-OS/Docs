@@ -21,7 +21,6 @@ JSSCompiler.add(compiledStyles);
 
 // Compiled to:
 // .tridaoknamain {color: black;} .tridaoknamain button {height: 50px;}
-
 ```
 
 Zde se vytváří styly pro vaši aplikaci. První se vytváří prázdný element:

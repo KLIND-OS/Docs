@@ -12,4 +12,4 @@ Musíte mít základní znalost JavaScriptu a HTML.
 
 ## Jak začít?
 
-První si musíte stáhnout a nainstalovat [KLIND OS Devevelopers](/developers/index.md). Poté si stáhněte `KLIND OS Packager` z [této stránky](https://klindos.jzitnik.dev/compiler)
+První si musíte stáhnout a nainstalovat [KLIND OS Developers](/developers/index.md). Poté si stáhněte `KLIND OS Packager` z [této stránky](https://klindos.jzitnik.dev/compiler)

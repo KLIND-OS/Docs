@@ -135,9 +135,9 @@ Funkce bere 3 parametry:
 
 ```javascript
 control.fileManager.addProgramToOpenApps(
-  ["text", "image"],
+  ["txt", "png"],
   (path) => {
-    console.log(fileArray);
+    console.log(path);
   },
   "Nejlepší program"
 );
