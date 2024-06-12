@@ -1,10 +1,10 @@
-# Storage API
+# Storage SDK
 
-Storage API se používá pro aplikace na ukládání dat.
+Storage SDK se používá pro aplikace na ukládání dat.
 
 Normálně se data aplikací ukládají do souboru ale v KLIND OS se ukládají do storage.
 
-## Jak použít storage API
+## Jak použít Storage SDK
 
 Jako první si musíme vytvořit aplikaci.
 
@@ -75,7 +75,7 @@ ClassConstructor.add(NazevaplikaceApp);
 
 Nyní musíme implementovat `mainOpen` a `saveText`. Začneme ukládáním.
 
-## Ukládání do storage API
+## Ukládání do Storage SDK
 
 Naimplementujeme funkci která bude ukládat text
 

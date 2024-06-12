@@ -1,6 +1,6 @@
-# Shortcuts API
+# Shortcuts SDK
 
-API pro vytváření globálních a window-specific zkratek.
+SDK pro vytváření globálních a window-specific zkratek.
 
 ## Shortcut třída
 

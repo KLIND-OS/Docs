@@ -1,6 +1,6 @@
-# FileLocker API
+# FileLocker SDK
 
-Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží FileLocker API.
+Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží FileLocker SDK.
 
 ## Zamknout soubor
 

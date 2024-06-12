@@ -1,8 +1,8 @@
-# File Manager API
+# File Manager SDK
 
-Pokud chcete pracovat se soubory ve vaši aplikaci pro KLIND OS, File Manager API je na to udělané.
+Pokud chcete pracovat se soubory ve vaši aplikaci pro KLIND OS, File Manager SDK je na to udělané.
 
-Všechny funkce, které upravují soubor berou také bypass klíč. Více info v [FileLocker API](filelocker.md)
+Všechny funkce, které upravují soubor berou také bypass klíč. Více info v [FileLocker SDK](filelocker.md)
 
 ## Open With
 
@@ -24,7 +24,7 @@ await contol.fileManager.open("/Downloads/", "file.txt");
 
 ## openFileWithApp
 
-Tato funkce není pro API a používá se v jiných funkcích.
+Tato funkce není pro SDK a používá se v jiných funkcích.
 
 ## Properties
 
@@ -143,6 +143,6 @@ control.fileManager.addProgramToOpenApps(
 );
 ```
 
-## FileLocker API
+## FileLocker SDK
 
-Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží [FileLocker API](filelocker.md).
+Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží [FileLocker SDK](filelocker.md).

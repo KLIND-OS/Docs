@@ -4,7 +4,7 @@ Začínáme s vývojem aplikací pro KLIND OS.
 
 ## Základní informace
 
-Aplikace pro KLIND OS se píšou v JavaScriptu. Taky se používá KLIND OS Apps API pro jednoduché vytváření aplikací.
+Aplikace pro KLIND OS se píšou v JavaScriptu. Taky se používá KLIND OS Apps SDK pro jednoduché vytváření aplikací.
 
 ## Co musím umět a mít?
 

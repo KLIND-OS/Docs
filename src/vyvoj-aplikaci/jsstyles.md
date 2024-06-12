@@ -1,6 +1,6 @@
-# JSStyles API
+# JSStyles SDK
 
-JSStyles API se využívá pro psaní CSS stylů přímo v JavaScriptu. JSStyles se vytváří v konstruktoru vaši aplikace.
+JSStyles SDK se využívá pro psaní CSS stylů přímo v JavaScriptu. JSStyles se vytváří v konstruktoru vaši aplikace.
 
 ## Syntax
 

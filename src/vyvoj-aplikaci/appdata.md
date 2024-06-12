@@ -1,6 +1,6 @@
 # AppData
 
-Potřebuje Vaše aplikace soubory jako např. obrázky ale i jiné! Není problém! Stačí využít funkce AppData v KLIND OS App API.
+Potřebuje Vaše aplikace soubory jako např. obrázky ale i jiné! Není problém! Stačí využít funkce AppData v KLIND OS App SDK.
 
 ## Kam uložit soubory?
 
@@ -8,7 +8,7 @@ Všechny soubory ukládáte do složky `assets/custom`.
 
 ## Jak získat soubor?
 
-Zde si ukážeme jak funguje AppData API.
+Zde si ukážeme jak funguje AppData SDK.
 
 ### Získat binary
 

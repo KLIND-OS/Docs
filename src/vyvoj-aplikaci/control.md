@@ -1,6 +1,6 @@
-# Control API
+# Control SDK
 
-Control API se používá na jednoduché ovládání systému
+Control SDK se používá na jednoduché ovládání systému
 
 ## Do when login
 
@@ -98,7 +98,7 @@ control.notify("Poznámkový blok", "Poznámka byla uložena!")
 
 ## fileManager
 
-Tohle je FileManager API. Více info zde: [FileManager API](filemanagerapi.md)
+Tohle je FileManager SDK. Více info zde: [FileManager SDK](filemanagerapi.md)
 
 ## Message
 

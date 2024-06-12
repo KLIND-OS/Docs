@@ -1,8 +1,8 @@
-# TrackingStatus API
+# TrackingStatus SDk
 
-Chcete vytvořit dialog s procentama? Například při ukládání nebo convertování souboru? Je to jednoduché s TrackingStatus API.
+Chcete vytvořit dialog s procentama? Například při ukládání nebo convertování souboru? Je to jednoduché s TrackingStatus SDK.
 
-Pomocí TrackingStatus API vytvoříte dialog stejný, jako dialog při kopírování nebo stahování souboru.
+Pomocí TrackingStatus SDK vytvoříte dialog stejný, jako dialog při kopírování nebo stahování souboru.
 
 ## Vytvoření
 
