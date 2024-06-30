@@ -143,6 +143,36 @@ control.fileManager.addProgramToOpenApps(
 );
 ```
 
+## Výběr souboru
+
+Pokud chcete aby uživatel vybral soubor toto je funkce, pomocí které vytvoříte file select dialog.
+
+```javascript
+control.fileManager.fileSelect({
+  success: async (path) => {
+    const content = await control.fileManager.getContent(path, "utf8");
+  },
+  closed: () => {
+    // User closed dialog.
+  },
+});
+```
+
+## Výběr složky
+
+Pokud chcete aby uživatel vybral složku toto je funkce, pomocí které vytvoříte folder select dialog.
+
+```javascript
+control.fileManager.folderSelect({
+  success: async (path) => {
+    const files = await control.fileManager.allFiles(path);
+  },
+  closed: () => {
+    // User closed dialog.
+  },
+});
+```
+
 ## FileLocker SDK
 
 Pro správnou práci se soubory by jste měli soubor zamknout v té době kdy s daným souborem pracujete. Pro to slouží [FileLocker SDK](filelocker.md).
