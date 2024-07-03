@@ -22,10 +22,6 @@ await control.fileManager.open(folder, file);
 await contol.fileManager.open("/Downloads/", "file.txt");
 ```
 
-## openFileWithApp
-
-Tato funkce není pro SDK a používá se v jiných funkcích.
-
 ## Properties
 
 `properties` je funkce která otevře okno vlastnosti souboru. Tato funkce bere cestu k souboru.
@@ -120,27 +116,6 @@ if (await control.fileManager.fileExists("/file.txt")) {
 } else {
   console.log("Soubor neexistuje!");
 }
-```
-
-## Add Program To Open Apps
-
-Funkce `addProgramToOpenApps` se používá pro přidání aplikace pro otevírání souboru.
-Třeba chcete vytvořit aplikaci která bude otevírat textové soubory. Pomocí této funkce to můžete udělat.
-Funkce bere 3 parametry:
-
-1. Typ/Typy souboru pro otevření buď jako string nebo array stringů
-   Např. `txt` nebo `["txt", "html"]`
-2. Script který se má spustit při otevření souboru. Musí mít jeden parametr a to bude `path`
-3. Název aplikace
-
-```javascript
-control.fileManager.addProgramToOpenApps(
-  ["txt", "png"],
-  (path) => {
-    console.log(path);
-  },
-  "Nejlepší program"
-);
 ```
 
 ## Výběr souboru

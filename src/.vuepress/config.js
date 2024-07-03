@@ -82,6 +82,7 @@ module.exports = {
             "prvni-aplikace",
             "otestovat-aplikaci",
             "kompilace",
+            "appclass",
             "jsstyles",
             "storage",
             "appdata",
