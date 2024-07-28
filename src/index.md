@@ -16,11 +16,10 @@ hero:
       link: /apps
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Learn KLIND OS
+    details: You will simply learn how to work with KLIND OS
+  - title: Creating applications for KLIND OS
+    details: Learn to create applications for KLIND OS by mastering JavaScript
+  - title: Help in development
+    details: Become a KLIND OS developer and help develop KLIND OS
 ---
-
