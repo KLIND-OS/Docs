@@ -9,11 +9,11 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get started
+      link: /get-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Vytváření aplikací
+      link: /apps
 
 features:
   - title: Feature A
