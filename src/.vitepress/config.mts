@@ -9,6 +9,7 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/KLIND-OS" }],
   },
+  head:  [['link', { rel: 'icon', href: '/favicon.png' }]],
 
   locales: {
     root: {
