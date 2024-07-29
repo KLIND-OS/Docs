@@ -9,7 +9,7 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/KLIND-OS" }],
   },
-  head:  [['link', { rel: 'icon', href: '/favicon.png' }]],
+  head: [["link", { rel: "icon", href: "/favicon.png" }]],
 
   locales: {
     root: {
@@ -21,9 +21,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "Home", link: "/" },
-          { text: "Getting started", link: "/get-started" },
-          { text: "Creating apps", link: "/apps" },
-          { text: "Developers", link: "/developers" },
+          { text: "Getting started", link: "/get-started/" },
+          { text: "Creating apps", link: "/apps/" },
+          { text: "Developers", link: "/developers/" },
         ],
 
         sidebar: [
@@ -49,9 +49,9 @@ export default defineConfig({
               { text: "Compilation", link: "/apps/compilation" },
               {
                 text: "APP class",
-                link: "/apps/file-manager/appclass",
+                link: "/apps/appclass",
               },
-              { text: "Control API", link: "/apps/browser/control" },
+              { text: "Control API", link: "/apps/control" },
               { text: "File manager API", link: "/apps/filemanager" },
               {
                 text: "Tracking status API",
@@ -63,9 +63,7 @@ export default defineConfig({
           },
           {
             text: "Developers",
-            items: [
-              { text: "Download", link: "/developers/" },
-            ],
+            items: [{ text: "Download", link: "/developers/" }],
           },
         ],
       },
@@ -77,10 +75,10 @@ export default defineConfig({
       description: "Dokumentace pro KLIND OS",
       themeConfig: {
         nav: [
-          { text: "Domov", link: "/cs" },
-          { text: "Začínáme", link: "/cs/get-started" },
-          { text: "Vytváření aplikací", link: "/cs/apps" },
-          { text: "Developers", link: "/cs/developers" },
+          { text: "Domov", link: "/cs/" },
+          { text: "Začínáme", link: "/cs/get-started/" },
+          { text: "Vytváření aplikací", link: "/cs/apps/" },
+          { text: "Developers", link: "/cs/developers/" },
         ],
 
         sidebar: [
@@ -102,17 +100,17 @@ export default defineConfig({
             items: [
               { text: "Úvod", link: "/cs/apps/" },
               { text: "První aplikace", link: "/cs/apps/first-app" },
-              { text: "Otestovat aplikaci", link: "/apps/get-started/test" },
+              { text: "Otestovat aplikaci", link: "/cs/apps/test" },
               { text: "Compilation", link: "/cs/apps/compilation" },
               {
                 text: "Třída APP",
-                link: "/apps/get-started/file-manager/appclass",
+                link: "/cs/apps/appclass",
               },
-              { text: "Control API", link: "/cs/apps/browser/control" },
+              { text: "Control API", link: "/cs/apps/control" },
               { text: "File manager API", link: "/cs/apps/filemanager" },
               {
                 text: "Tracking status API",
-                link: "/apps/get-started/filelocker",
+                link: "/cs/apps/trackingstatus",
               },
               { text: "Shortcuts API", link: "/cs/apps/filelocker" },
               { text: "Contextmenu API", link: "/cs/apps/shortcuts" },
@@ -120,9 +118,7 @@ export default defineConfig({
           },
           {
             text: "Developers",
-            items: [
-              { text: "Stažení", link: "/cs/developers/" },
-            ],
+            items: [{ text: "Stažení", link: "/cs/developers/" }],
           },
         ],
       },

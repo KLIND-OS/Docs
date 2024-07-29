@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "KLIND OS Docs"
+  name: "KLIND OS"
   text: "Documentation for KLIND OS"
   image:
     src: /logo.png
