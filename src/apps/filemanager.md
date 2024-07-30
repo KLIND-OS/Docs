@@ -85,9 +85,9 @@ The `folderExist` function checks if a folder exists. It takes one parameter and
 
 ```javascript
 if (await control.fileManager.folderExist("/folder")) {
- console.log("exists");
+  console.log("exists");
 } else {
- console.log("does not exist");
+  console.log("does not exist");
 }
 ```
 
@@ -112,9 +112,9 @@ The function `fileExists` returns `true` or `false` if the file exists according
 
 ```javascript
 if (await control.fileManager.fileExists("/file.txt")) {
- console.log("The file exists!");
+  console.log("The file exists!");
 } else {
- console.log("The file does not exist!");
+  console.log("The file does not exist!");
 }
 ```
 
@@ -124,12 +124,12 @@ If you want the user to select a file, this is the function you use to create a 
 
 ```javascript
 control.fileManager.fileSelect({
- success: async (path) => {
- const content = await control.fileManager.getContent(path, "utf8");
- },
- closed: () => {
- // User closed dialog.
- },
+  success: async (path) => {
+    const content = await control.fileManager.getContent(path, "utf8");
+  },
+  closed: () => {
+    // User closed dialog.
+  },
 });
 ```
 
@@ -139,12 +139,12 @@ If you want the user to select a folder, this is the function you use to create 
 
 ```javascript
 control.fileManager.folderSelect({
- success: async (path) => {
- const files = await control.fileManager.allFiles(path);
- },
- closed: () => {
- // User closed dialog.
- },
+  success: async (path) => {
+    const files = await control.fileManager.allFiles(path);
+  },
+  closed: () => {
+    // User closed dialog.
+  },
 });
 ```
 

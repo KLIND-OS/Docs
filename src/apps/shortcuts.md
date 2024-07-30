@@ -10,8 +10,8 @@ The second argument is a function that is invoked when a key is pressed.
 
 ```javascript
 const shortcut = new Shortcut(["Meta", "o"], () => {
- // Executes when user presses Win + o
- console.log("idk");
+  // Executes when user presses Win + o
+  console.log("idk");
 });
 ```
 
@@ -21,7 +21,7 @@ To create a global shortcut, you must call the `createGlobalShortcut` function. 
 
 ```javascript
 this.app.Shortcuts.createGlobalShortcut(
- new Shortcut(["Meta", "o"], () => console.log("idk"))
+  new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```
 
@@ -31,7 +31,7 @@ To create a window-specific shortcut, you must call the `createWindowShortcut` f
 
 ```javascript
 this.appShortcuts.createWindowShortcut(
- this.windowNames.MAIN,
- new Shortcut(["Meta", "o"], () => console.log("idk"))
+  this.windowNames.MAIN,
+  new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```

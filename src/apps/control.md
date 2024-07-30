@@ -10,8 +10,8 @@ Do when login is used as follows
 
 ```javascript
 control.dowhenlogin.add(() => {
- console.log("logged in")
-})
+  console.log("logged in");
+});
 ```
 
 ## Error
@@ -21,9 +21,9 @@ control.dowhenlogin.add(() => {
 error is used as follows:
 
 ```javascript
-control.error(typeErrors)(text, nameApplication)
+control.error(typeErrors)(text, nameApplication);
 // So e.g.
-control.error("warn")("An error occurred", "Notepad")
+control.error("warn")("An error occurred", "Notepad");
 ```
 
 Error types are `fatal` and `warn`. Fatal brings up a red screen.
@@ -51,11 +51,11 @@ functions is used as follows:
 
 ```javascript
 var app = new App({
- name: "Application name",
- hidden: false
-})
-control.functions.logout(app)
-control.functions.reboot(app)
+  name: "Application name",
+  hidden: false,
+});
+control.functions.logout(app);
+control.functions.reboot(app);
 ```
 
 ## Play sound
@@ -65,9 +65,9 @@ control.functions.reboot(app)
 playsound is used as follows:
 
 ```javascript
-control.playSound(dataUri)
+control.playSound(dataUri);
 // Or
-control.playSound("https://example.com/sound.mp3")
+control.playSound("https://example.com/sound.mp3");
 ```
 
 The return value is a `howl` object.
@@ -77,9 +77,9 @@ The return value is a `howl` object.
 `playsong` is similar to playsound. But there are extra features.
 
 ```javascript
-control.playSong(dataUri, otherSettings, autoplay)
+control.playSong(dataUri, otherSettings, autoplay);
 // E.g.
-control.playSong("https://example.com/song.mp3", {}, true)
+control.playSong("https://example.com/song.mp3", {}, true);
 ```
 
 The return value is a `howl` object.
@@ -91,9 +91,9 @@ The return value is a `howl` object.
 notify is used as follows:
 
 ```javascript
-control.notify(appname, text)
+control.notify(appname, text);
 // E.g.
-control.notify("Notepad", "Note has been saved!")
+control.notify("Notepad", "Note has been saved!");
 ```
 
 ## fileManager
@@ -106,11 +106,14 @@ This is the FileManager API. More info here: [FileManager API](filemanager.md)
 
 ```javascript
 control.message.prompt("Enter name: ", (response) => {
- console.log(response)
-})
-control.message.confirm("Are you sure you want to delete the file?", (response) => {
- if (response) {
- console.log("confirmed")
- }
-})
+  console.log(response);
+});
+control.message.confirm(
+  "Are you sure you want to delete the file?",
+  (response) => {
+    if (response) {
+      console.log("confirmed");
+    }
+  },
+);
 ```

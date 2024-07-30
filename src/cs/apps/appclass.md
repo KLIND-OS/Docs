@@ -27,7 +27,7 @@ ClassConstructor.add(
 
       styles.bind(this)();
     }
-  }
+  },
 );
 ```
 

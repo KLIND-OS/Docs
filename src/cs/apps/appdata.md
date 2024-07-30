@@ -43,8 +43,9 @@ const url = this.app.appData.getUrl("image.png");
 
 win.querySelector("img").src = url;
 // Nebo
-fetch(url).then(res => res.blob()).then(data => {
-  // Do something with data
-})
+fetch(url)
+  .then((res) => res.blob())
+  .then((data) => {
+    // Do something with data
+  });
 ```
-

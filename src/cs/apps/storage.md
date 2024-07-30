@@ -4,7 +4,6 @@ Storage API se používá pro aplikace na ukládání dat.
 
 Normálně se data aplikací ukládají do souboru ale v KLIND OS se ukládají do storage.
 
-
 ## Ukládání do Storage SDK
 
 ```javascript

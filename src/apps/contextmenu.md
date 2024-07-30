@@ -10,15 +10,15 @@ Creating a context menu for only one element is very simple.
 const element = document.querySelector(".yourelement");
 
 new ContextMenu(element, [
- new ContextMenuItem("Option 1", () => {
- console.log("Option 1 pressed");
- }),
- new ContextMenuItem("Option 2", () => {
- console.log("Option 2 pressed");
- }),
- new ContextMenuItem("Option 3", () => {
- console.log("Option 3 pressed");
- }),
+  new ContextMenuItem("Option 1", () => {
+    console.log("Option 1 pressed");
+  }),
+  new ContextMenuItem("Option 2", () => {
+    console.log("Option 2 pressed");
+  }),
+  new ContextMenuItem("Option 3", () => {
+    console.log("Option 3 pressed");
+  }),
 ]);
 ```
 
@@ -56,18 +56,18 @@ Don't forget to add a third argument that says the input is an array.
 
 ```javascript
 const contextmenu = new ContextMenu(undefined, [
- new ContextMenuItem("Option 1", (passArgument) => {
- console.log("Argument passed: ", passArgument);
- console.log("Option 1 pressed");
- }),
- new ContextMenuItem("Option 2", (passArgument) => {
- console.log("Argument passed: ", passArgument);
- console.log("Option 2 pressed");
- }),
- new ContextMenuItem("Option 3", (passArgument) => {
- console.log("Argument passed: ", passArgument);
- console.log("Option 3 pressed");
- }),
+  new ContextMenuItem("Option 1", (passArgument) => {
+    console.log("Argument passed: ", passArgument);
+    console.log("Option 1 pressed");
+  }),
+  new ContextMenuItem("Option 2", (passArgument) => {
+    console.log("Argument passed: ", passArgument);
+    console.log("Option 2 pressed");
+  }),
+  new ContextMenuItem("Option 3", (passArgument) => {
+    console.log("Argument passed: ", passArgument);
+    console.log("Option 3 pressed");
+  }),
 ]);
 
 const xposition = 25; // 25px from left. Tj left: 25px;

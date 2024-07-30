@@ -1,6 +1,6 @@
 # Kompilace aplikace
 
-Poté co máte aplikaci vytvořenou, musíte ji vykompilovat. 
+Poté co máte aplikaci vytvořenou, musíte ji vykompilovat.
 
 Uložte si ikonu do `assets/logo.png` a následně spusťte KLIND-OS-Packager.mjs.
 

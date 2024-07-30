@@ -10,8 +10,8 @@ Do when login se používá následovně
 
 ```javascript
 control.dowhenlogin.add(() => {
-    console.log("přihlášeno")
-})
+  console.log("přihlášeno");
+});
 ```
 
 ## Error
@@ -21,9 +21,9 @@ control.dowhenlogin.add(() => {
 error se používá následovně:
 
 ```javascript
-control.error(typChyby)(text,nazevAplikace)
+control.error(typChyby)(text, nazevAplikace);
 // Takže např.
-control.error("warn")("Nastala chyba", "Poznámkový blok")
+control.error("warn")("Nastala chyba", "Poznámkový blok");
 ```
 
 Typy chyb jsou `fatal` a `warn`. Fatal vyvolá červenou obrazovku.
@@ -36,10 +36,9 @@ loged se používá následovně:
 
 ```javascript
 if (control.loged) {
-    // Uživatel přihlášen
-}
-else {
-    // Uživatel odhlášen
+  // Uživatel přihlášen
+} else {
+  // Uživatel odhlášen
 }
 ```
 
@@ -51,11 +50,11 @@ functions se používá následovně:
 
 ```javascript
 var aplikace = new App({
-    name: "Název aplikace",
-    hidden: false
-})
-control.functions.logout(aplikace)
-control.functions.reboot(aplikace)
+  name: "Název aplikace",
+  hidden: false,
+});
+control.functions.logout(aplikace);
+control.functions.reboot(aplikace);
 ```
 
 ## Play sound
@@ -65,9 +64,9 @@ control.functions.reboot(aplikace)
 playsound se používá následovně:
 
 ```javascript
-control.playSound(dataUri)
+control.playSound(dataUri);
 // Nebo
-control.playSound("https://example.com/sound.mp3")
+control.playSound("https://example.com/sound.mp3");
 ```
 
 Return hodnota je `howl` objekt.
@@ -77,9 +76,9 @@ Return hodnota je `howl` objekt.
 `playsong` je podobné jako playsound. Ale jsou tam funkce navíc.
 
 ```javascript
-control.playSong(dataUri, otherSettings, autoplay)
+control.playSong(dataUri, otherSettings, autoplay);
 // Např.
-control.playSong("https://example.com/song.mp3", {}, true)
+control.playSong("https://example.com/song.mp3", {}, true);
 ```
 
 Return hodnota je `howl` objekt.
@@ -91,9 +90,9 @@ Return hodnota je `howl` objekt.
 notify se používá následovně:
 
 ```javascript
-control.notify(appname, text)
+control.notify(appname, text);
 // Např.
-control.notify("Poznámkový blok", "Poznámka byla uložena!")
+control.notify("Poznámkový blok", "Poznámka byla uložena!");
 ```
 
 ## fileManager
@@ -106,11 +105,11 @@ Tohle je FileManager API. Více info zde: [FileManager API](filemanager.md)
 
 ```javascript
 control.message.prompt("Zadejte jméno: ", (response) => {
-    console.log(response)
-})
+  console.log(response);
+});
 control.message.confirm("Opravdu chcete smazat soubor?", (response) => {
-    if (response) {
-        console.log("potvrzeno")
-    }
-})
+  if (response) {
+    console.log("potvrzeno");
+  }
+});
 ```

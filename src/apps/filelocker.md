@@ -23,8 +23,8 @@ The file will unlock itself after ten 5 seconds. This is a protection in case th
 
 ```javascript
 const intervalID = setInterval(() => {
- FileLocker.continue(path);
-}, 5000)
+  FileLocker.continue(path);
+}, 5000);
 ```
 
 This will ensure that the file remains locked

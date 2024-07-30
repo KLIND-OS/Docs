@@ -21,7 +21,7 @@ Pro vytvoření globální zkratky musíte vyvolat funkci `createGlobalShortcut`
 
 ```javascript
 this.app.Shortcuts.createGlobalShortcut(
-  new Shortcut(["Meta", "o"], () => console.log("idk"))
+  new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```
 
@@ -32,6 +32,6 @@ Pro vytvoření window-specific zkratky musíte vyvolat funkce `createWindowShor
 ```javascript
 this.appShortcuts.createWindowShortcut(
   this.windowNames.MAIN,
-  new Shortcut(["Meta", "o"], () => console.log("idk"))
+  new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```

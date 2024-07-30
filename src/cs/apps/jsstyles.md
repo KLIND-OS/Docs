@@ -9,11 +9,7 @@ const styles = new JSSElement("", undefined, [
   new JSSElement(
     `.${this.app.windowParser.parseClass(this.windowNames.MAIN)}`,
     new JSSStyles([new JSSStyle("color", "black")]),
-    [
-      new JSSElement(`button`,
-        new JSSStyles([new JSSStyle("height", "50px")])
-      )
-    ]
+    [new JSSElement(`button`, new JSSStyles([new JSSStyle("height", "50px")]))],
   ),
 ]);
 const compiledStyles = JSSCompiler.compile(styles);
@@ -26,9 +22,7 @@ JSSCompiler.add(compiledStyles);
 Zde se vytváří styly pro vaši aplikaci. První se vytváří prázdný element:
 
 ```javascript
-const styles = new JSSElement("", undefined, [
-
-]);
+const styles = new JSSElement("", undefined, []);
 ```
 
 Má prázdný selector `""` a žádné styly `undefined` takže bude přeskočen. Využívá se na to aby jste do něj mohli vložit více elemetů.
@@ -40,9 +34,7 @@ const styles = new JSSElement("", undefined, [
   new JSSElement(
     `.${this.app.windowParser.parseClass(this.windowNames.MAIN)}`,
     new JSSStyles([new JSSStyle("color", "black")]),
-    [
-      
-    ]
+    [],
   ),
 ]);
 ```
@@ -54,11 +46,7 @@ const styles = new JSSElement("", undefined, [
   new JSSElement(
     `.${this.app.windowParser.parseClass(this.windowNames.MAIN)}`,
     new JSSStyles([new JSSStyle("color", "black")]),
-    [
-      new JSSElement(`button`,
-        new JSSStyles([new JSSStyle("height", "50px")])
-      )
-    ]
+    [new JSSElement(`button`, new JSSStyles([new JSSStyle("height", "50px")]))],
   ),
 ]);
 ```
@@ -80,13 +68,9 @@ const styles = new JSSElement("", undefined, [
     `.${this.app.windowParser.parseClass(this.windowNames.MAIN)}`,
     new JSSStyles([new JSSStyle("color", "black")]),
     [
-      new JSSElement(`button`,
-        new JSSStyles([new JSSStyle("height", "50px")])
-      ),
-      new JSSElement(`input`,
-        new JSSStyles([new JSSStyle("width", "150px")])
-      )
-    ]
+      new JSSElement(`button`, new JSSStyles([new JSSStyle("height", "50px")])),
+      new JSSElement(`input`, new JSSStyles([new JSSStyle("width", "150px")])),
+    ],
   ),
 ]);
 ```
@@ -98,20 +82,12 @@ const styles = new JSSElement("", undefined, [
   new JSSElement(
     `.${this.app.windowParser.parseClass(this.windowNames.MAIN)}`,
     new JSSStyles([new JSSStyle("color", "black")]),
-    [
-      new JSSElement(`button`,
-        new JSSStyles([new JSSStyle("height", "50px")])
-      ),
-    ]
+    [new JSSElement(`button`, new JSSStyles([new JSSStyle("height", "50px")]))],
   ),
   new JSSElement(
     `.${this.app.windowParser.parseClass(this.windowNames.TEST)}`,
     new JSSStyles([new JSSStyle("color", "white")]),
-    [
-      new JSSElement(`input`,
-        new JSSStyles([new JSSStyle("width", "150px")])
-      ),
-    ]
+    [new JSSElement(`input`, new JSSStyles([new JSSStyle("width", "150px")]))],
   ),
 ]);
 

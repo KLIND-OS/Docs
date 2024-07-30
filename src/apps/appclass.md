@@ -8,26 +8,26 @@ This class is put into the private class constructor which is added to the Class
 
 ```javascript
 ClassConstructor.add(
- class {
- apps;
- keys;
+  class {
+    apps;
+    keys;
 
- windowNames = windowNames;
+    windowNames = windowNames;
 
- constructor(key) {
- this.key = key;
+    constructor(key) {
+      this.key = key;
 
- // App class
- this.app = new App({
- name: "test",
- hidden: false,
- });
+      // App class
+      this.app = new App({
+        name: "test",
+        hidden: false,
+      });
 
- addWindows.bind(this)();
+      addWindows.bind(this)();
 
- styles.bind(this)();
- }
- }
+      styles.bind(this)();
+    }
+  },
 );
 ```
 
@@ -43,21 +43,21 @@ The `createWindow` function is used to create a window.
 import mainStart from "./MAIN/start";
 
 export const windowNames = {
- MAIN: "Main Window",
+  MAIN: "Main Window",
 };
 
 export function addWindows() {
- // Call the createWindow function
- this.app.createWindow({
- name: windowNames.MAIN,
- buttons: {
- close: () => {},
- mini: () => {},
- },
- onStart: mainStart,
- defaultWindow: true,
- content: "pages/main.html",
- });
+  // Call the createWindow function
+  this.app.createWindow({
+    name: windowNames.MAIN,
+    buttons: {
+      close: () => {},
+      mini: () => {},
+    },
+    onStart: mainStart,
+    defaultWindow: true,
+    content: "pages/main.html",
+  });
 }
 ```
 
@@ -101,16 +101,16 @@ The `register` function is called to register the application to open a specific
 
 ```javascript
 this.app.fileOpen.register(["txt", "csv"], (path) => {
- windows.open(this.app.windowParser.parseName(this.windowNames.MAIN), {
- path
- });
+  windows.open(this.app.windowParser.parseName(this.windowNames.MAIN), {
+    path,
+  });
 });
 
 // Or
 this.app.fileOpen.register("txt", (path) => {
- windows.open(this.app.windowParser.parseName(this.windowNames.MAIN), {
- path
- });
+  windows.open(this.app.windowParser.parseName(this.windowNames.MAIN), {
+    path,
+  });
 });
 ```
 

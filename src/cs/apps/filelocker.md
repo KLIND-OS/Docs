@@ -23,8 +23,8 @@ Soubor se po deseti 5 sekundách sám odemkne. Toto je ochrana v případě že 
 
 ```javascript
 const intervalID = setInterval(() => {
-    FileLocker.continue(path);
-}, 5000)
+  FileLocker.continue(path);
+}, 5000);
 ```
 
 To zaručí že soubor zůstane zamčen
