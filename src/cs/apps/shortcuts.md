@@ -31,7 +31,7 @@ Pro vytvoření window-specific zkratky musíte vyvolat funkce `createWindowShor
 
 ```javascript
 this.appShortcuts.createWindowShortcut(
-  this.windowNames.MAIN,
+  this.windowParser.parseName(this.windowNames.MAIN),
   new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```

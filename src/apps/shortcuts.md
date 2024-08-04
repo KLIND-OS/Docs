@@ -31,7 +31,7 @@ To create a window-specific shortcut, you must call the `createWindowShortcut` f
 
 ```javascript
 this.appShortcuts.createWindowShortcut(
-  this.windowNames.MAIN,
+  this.windowParser.parseName(this.windowNames.MAIN),
   new Shortcut(["Meta", "o"], () => console.log("idk")),
 );
 ```
