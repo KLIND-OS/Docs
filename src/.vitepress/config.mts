@@ -55,10 +55,10 @@ export default defineConfig({
               { text: "File manager API", link: "/apps/filemanager" },
               {
                 text: "Tracking status API",
-                link: "/apps/filelocker",
+                link: "/apps/trackingstatus",
               },
-              { text: "Shortcuts API", link: "/apps/filelocker" },
-              { text: "Contextmenu API", link: "/apps/shortcuts" },
+              { text: "Shortcuts API", link: "/apps/shortcuts" },
+              { text: "Contextmenu API", link: "/apps/contextmenu" },
             ],
           },
           {
@@ -112,8 +112,8 @@ export default defineConfig({
                 text: "Tracking status API",
                 link: "/cs/apps/trackingstatus",
               },
-              { text: "Shortcuts API", link: "/cs/apps/filelocker" },
-              { text: "Contextmenu API", link: "/cs/apps/shortcuts" },
+              { text: "Shortcuts API", link: "/cs/apps/shortcuts" },
+              { text: "Contextmenu API", link: "/cs/apps/contextmenu" },
             ],
           },
           {
