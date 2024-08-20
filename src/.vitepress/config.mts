@@ -59,6 +59,7 @@ export default defineConfig({
               },
               { text: "Shortcuts API", link: "/apps/shortcuts" },
               { text: "Contextmenu API", link: "/apps/contextmenu" },
+              { text: "File dragging API", link: "/apps/filedragging" },
             ],
           },
           {
@@ -114,6 +115,7 @@ export default defineConfig({
               },
               { text: "Shortcuts API", link: "/cs/apps/shortcuts" },
               { text: "Contextmenu API", link: "/cs/apps/contextmenu" },
+              { text: "File dragging API", link: "/cs/apps/filedragging" },
             ],
           },
           {
