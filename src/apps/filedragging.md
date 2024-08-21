@@ -7,7 +7,7 @@ Do you want your app to be able to accept files using dragging? File dragging AP
 You register a drop zone by selecting what element should be accepting files. It will also include all the child elements.
 
 ```javascript
-const element = document.querySelector(".yourelement");
+const element = win.querySelector(".yourelement");
 FileDraggingAPI.registerDroppable(
   element, // What element should be accepting the files
   true, // If should accept files
@@ -42,4 +42,22 @@ FileDraggingAPI.registerDroppable(
     }
   }
 );
+```
+
+## Register file/folder
+
+You can register file/folder using register function.
+
+### File
+
+```javascript
+const element = win.querySelector(".yourelement");
+FileDraggingAPI.registerFile(element, "filename", "/path/to/file.txt");
+```
+
+### Folder
+
+```javascript
+const element = win.querySelector(".yourelement");
+FileDraggingAPI.registerFolder(element, "foldername", "/path/to/folder");
 ```

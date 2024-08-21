@@ -43,3 +43,21 @@ FileDraggingAPI.registerDroppable(
   }
 );
 ```
+
+## Register file/folder
+
+Můžete registrovar soubor/složku pomocí register funkce.
+
+### Soubor
+
+```javascript
+const element = win.querySelector(".yourelement");
+FileDraggingAPI.registerFile(element, "filename", "/path/to/file.txt");
+```
+
+### Složka
+
+```javascript
+const element = win.querySelector(".yourelement");
+FileDraggingAPI.registerFolder(element, "foldername", "/path/to/folder");
+```
